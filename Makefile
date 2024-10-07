@@ -4,6 +4,7 @@ PKGVERSION=0.0.4
 PKGID=com.github.groob.yo-yo
 
 all: build pkg
+.PHONY: build pkg
 build:
 	/bin/rm -rf build
 	GOOS=darwin GOARCH=amd64 go build -o build/yo-yo.amd64
